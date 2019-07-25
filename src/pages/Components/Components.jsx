@@ -36,31 +36,30 @@ class Components extends React.Component {
     return (
       <div>
         <Header
-          brand="Material Kit React"
+          brand="UMARF"
           rightLinks={<HeaderLinks />}
           fixed
-          color="transparent"
           changeColorOnScroll={{
             height: 400,
-            color: "white"
+            color: "transparent"
           }}
           {...rest}
         />
-        <Parallax image={require("assets/img/bg4.jpg")}>
-          <div className={classes.container}>
-            <GridContainer>
-              <GridItem>
-                <div className={classes.brand}>
-                  <h1 className={classes.title}>Material Kit React.</h1>
-                  <h3 className={classes.subtitle}>
-                    A Badass Material-UI Kit based on Material Design.
-                  </h3>
-                </div>
-              </GridItem>
-            </GridContainer>
-          </div>
-        </Parallax>
-
+        {/*<Parallax image={require("assets/img/bg4.jpg")}>*/}
+        {/*  <div className={classes.container}>*/}
+        {/*    <GridContainer>*/}
+        {/*      <GridItem>*/}
+        {/*        <div className={classes.brand}>*/}
+        {/*          <h1 className={classes.title}>Material Kit React.</h1>*/}
+        {/*          <h3 className={classes.subtitle}>*/}
+        {/*            A Badass Material-UI Kit based on Material Design.*/}
+        {/*          </h3>*/}
+        {/*        </div>*/}
+        {/*      </GridItem>*/}
+        {/*    </GridContainer>*/}
+        {/*  </div>*/}
+        {/*</Parallax>*/}
+        <br/><br/>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <SectionBasics />
           <SectionNavbars />

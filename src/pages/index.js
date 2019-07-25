@@ -10,6 +10,7 @@ import Components from "./Components/Components.jsx";
 import LandingPage from "./LandingPage/LandingPage.jsx";
 import ProfilePage from "./ProfilePage/ProfilePage.jsx";
 import LoginPage from "./LoginPage/LoginPage.jsx";
+import IngestionDashboard from "./ingestion/dashboard.jsx";
 
 let hist = createMemoryHistory();
 
@@ -17,6 +18,7 @@ export default () => (
   <Router history={hist}>
     <Switch>
       <Route path="/landing-page" component={LandingPage} />
+      <Route path="/ingestion/dashboard" component={IngestionDashboard} />
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/login-page" component={LoginPage} />
       <Route path="/" component={Components} />
